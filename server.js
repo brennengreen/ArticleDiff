@@ -1,9 +1,9 @@
 //'use strict';
 const express = require('express');
-const bodyParser = require('body-parser');
+var bodyParser = require('body-parser');
 const PORT = process.env.PORT || 5000;
 const path = require("path");
-var app = module.exports = express();
+var app = express();
 
 // Define a templating engine
 app.set('view engine', 'pug')
@@ -22,7 +22,7 @@ app.get('/', function(req, res) {
     res.render("index", {title: "News Artical Bias Analysis"});
 })
 
-app.get('results', function(req, res) {
+app.get('/results', function(req, res) {
     res.render("results");
 })
 

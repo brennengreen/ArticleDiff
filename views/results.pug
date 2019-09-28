@@ -1,3 +1,21 @@
-doctype html
-html(lang = 'en')
-    h1 results
+extend layout.pug
+
+block message
+    div(class="greeting")
+        h1(id="results-message")
+
+    div(class="hl")
+
+block company-box
+    div(class="company-box" style="display:flex;flex-wrap:nowrap;")
+                div(class="company-container" id="container-left")
+                    h2(id="cOneTitle")
+                div(class="vl")
+                div(class="company-container" id="container-right")
+                    h2(id="cTwoTitle")
+
+
+block scripts
+    script(src="/javascripts/getquery.js")
+        let payload = sessionStorage.getItem("query");
+        console.log(payload)

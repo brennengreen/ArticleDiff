@@ -120,3 +120,13 @@ input {
   justify-content: center;
   overflow: hidden;
 }
+
+#cOneTitle {
+  width: 35vw;
+  border: 1px solid red;
+}
+
+#cTwoTitle {
+  width: 35vw;
+
+}

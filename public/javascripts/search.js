@@ -3,8 +3,13 @@ function search() {
         "search": document.getElementById("search-bar").value,
         "companyOne": document.getElementById("1").value,
         "companyTwo": document.getElementById("2").value
-    }
+    };
     console.log(payload);
 
-    window.location.href = 'results';
+    sessionStorage.setItem("search", payload["search"]);
+    sessionStorage.setItem("cOne", payload["companyOne"]);
+    sessionStorage.setItem("cTwo", payload["companyTwo"]);
+
+
+    window.open("results");
 }
