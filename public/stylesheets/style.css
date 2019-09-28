@@ -1,8 +1,122 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Libre Baskerville', serif;
+  padding: 0; margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 35vh;
+  background-image: url(../images/lined-paper.png);
+  background-repeat: repeat;
+  backface-visibility: inherit;
 }
 
-a {
-  color: #00B7FF;
+body h1, h2, h3, p {
+  margin: .25em;
+}
+
+.greeting {
+  padding-bottom: 2em;
+}
+
+input {
+  padding: 1em;
+  margin-left: .5em;
+}
+
+.search-box {
+  height: 45px;
+  opacity: 75%;
+  margin: 0px 0px 20px 20px;
+  display: inline-flex;
+  border: 2px solid #BFC0C0;
+  width: 35vw;
+}
+
+.search-button {
+  display: inline-flex;
+  height: 40px;
+  width: 100px;
+  border: 2px solid #BFC0C0;
+  margin: 0px 20px 20px 20px;
+  color: #BFC0C0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.search-button {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.search-button {
+  position: relative;
+  transition: all .45s ease-Out;
+}
+
+#circle {
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  line-height: 40px;
+  border-radius: 50%;
+  background: #BFC0C0;
+  position: absolute;
+  transition: all .5s ease-Out;
+  top: 20px;
+  left: 70px;
+}
+
+.search-button:hover #circle {
+  width: 200%;
+  height: 500%;
+  opacity: .5;
+  top: -70px;
+  left: -70px;
+}
+
+.search-button:hover a {
+  color: #2D3142;
+}
+
+.hl {
+  border: 1px solid #BFC0C0;
+  width: 75%;
+}
+
+.vl {
+  border: 1px solid #BFC0C0;
+  height: 100vh;
+}
+
+.company-container {
+  min-height: 45vh;
+}
+
+.whitespace-divider {
+  width:10vw;
+}
+
+.company-selection {
+  position: relative;
+  top: 30%;
+  height: 40px;
+  width: 15vw;
+  border: 2px solid #BFC0C0;
+  margin: 0px 20px 20px 20px;
+  color: #BFC0C0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
