@@ -1,22 +1,15 @@
 {
   "name": "articlediff",
-  "version": "0.0.1",
-  "description": "A news articile differential analysis app",
-  "main": "server.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "start": "node server.js"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/brennengreen/ArticleDiff.git"
-  },
-  "author": "Brennen Green and Kevin Patel",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/brennengreen/ArticleDiff/issues"
-  },
-  "homepage": "https://github.com/brennengreen/ArticleDiff#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
   }
 }
