@@ -1,8 +1,8 @@
 'use strict';
 const express = require('express');
 const port = 80;
+const app = express();
 
-app = express();
 app.listen(PORT);
 app.get('/', (req, res) => {
     var hostname = process.env["HOSTNAME"].split("-");
