@@ -1,3 +1,5 @@
+
+
 console.log("QUERYING...");
 let cOne = sessionStorage.getItem("cOne");
 let cTwo = sessionStorage.getItem("cTwo");
