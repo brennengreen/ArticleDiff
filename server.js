@@ -1,12 +1,11 @@
 'use strict';
 const express = require('express');
-const port = 80;
+const PORT = 80 || process.env.PORT;
 const app = express();
 
 app.listen(PORT);
 app.get('/', (req, res) => {
-    var hostname = process.env["HOSTNAME"].split("-");
-    res.send(hostname[hostname.length - 2]);
+    res.send("Hello World");
 });
 
 console.log(`Listening on ${PORT}`);
