@@ -1,6 +1,6 @@
 'use strict';
 const express = require('express');
-const PORT = 80 || process.env.PORT;
+const PORT = process.env.PORT || 5000;
 const app = express();
 
 app.listen(PORT);
