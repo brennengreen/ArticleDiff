@@ -1,5 +1,6 @@
 doctype html
 html(lang='en')
+    script(src="javascripts/search.js")
     head
         title Beat the Bias!
         <link href="/stylesheets/style.css" type="text/css" rel="stylesheet">
@@ -12,8 +13,8 @@ html(lang='en')
             p Developed by Brennen Green and Kevin Patel
             p University of Kentucky
         div(class="search")
-            input(type="search", name="search-bar", class="search-box" placeholder="Article topic...") 
-            div(class="search-button", id="button-3")
+            input(type="search", id="search-bar", name="search-bar", class="search-box" placeholder="Article topic...") 
+            div(class="search-button", id="button-3" onclick="search()")
                 div(id="circle")
                 a Search!
         div(class="hl")
@@ -21,7 +22,7 @@ html(lang='en')
         div(class="company-box" style="display:flex;flex-wrap:nowrap;")
             div(class="whitespace-divider")
             div(class="company-container" id="container-left")
-                select(name="company-left" class="company-selection")
+                select(name="company-left" id="1" class="company-selection")
                     option(value="") Company One
                     option(value="cnn") CNN
                     option(value="msnbc") MSNBC
@@ -33,7 +34,7 @@ html(lang='en')
             div(class="vl")
             div(class="whitespace-divider")
             div(class="company-container" id="container-right")
-                select(name="company-right" class="company-selection")
+                select(name="company-right" id="2" class="company-selection")
                     option(value="") Company Two
                     option(value="cnn") CNN
                     option(value="msnbc") MSNBC
